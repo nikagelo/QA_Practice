@@ -147,6 +147,12 @@ public class MainPageSteps extends MainPage {
         email.scrollIntoView(true).getCssValue("red");
         return this;
     }
+    public MainPageSteps fillName(){
+        name.scrollIntoView(true).setValue("Test");
+        clickBtn2();
+        name.getCssValue("rgb(69, 69, 69)");
+        return this;
+    }
 
 
 }

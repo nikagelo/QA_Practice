@@ -42,4 +42,3 @@ public class MainPage {
 
 
 }
-//test case 22, checks if address input gets red when submitting empty form
