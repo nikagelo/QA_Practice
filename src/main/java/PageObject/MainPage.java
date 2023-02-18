@@ -31,7 +31,7 @@ public class MainPage {
     iurPer = $(byId("iur")),
     submit2 = $(byId("btn2")),
     name = $(byName("name")),
-    personalID = $(byName("personalID")),
+    personalID = $(byName("personalId")),
     adress = $(byName("adress")),
     phone = $(byName("phone")),
     date = $(byName("date"));

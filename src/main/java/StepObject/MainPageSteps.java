@@ -127,6 +127,10 @@ public class MainPageSteps extends MainPage {
         return this;
 
     }
+    public  MainPageSteps checkPersIDRed(){
+        personalID.scrollIntoView(true).getCssValue("red");
+        return this;
+    }
 
 
 }
