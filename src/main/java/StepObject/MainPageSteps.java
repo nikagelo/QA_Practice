@@ -105,6 +105,10 @@ public class MainPageSteps extends MainPage {
         toContinue.shouldNotBe(Condition.visible);
         return this;
     }
+    public MainPageSteps noClearBtn(){
+        clearCart.shouldNotBe(Condition.visible);
+        return this;
+    }
 
 
 }
