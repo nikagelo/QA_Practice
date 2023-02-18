@@ -180,6 +180,15 @@ public class MainPageSteps extends MainPage {
         personalID.getCssValue("rgb(69, 69, 69)");
         return this;
     }
+    public MainPageSteps fillAddress(String str){
+        adress.setValue(str);
+        return this;
+    }
+    public  MainPageSteps notRedAddress(){
+        adress.getCssValue("rgb(69, 69, 69)");
+        return this;
+
+    }
 
 
 }
