@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 
 import static DataObject.MainPageData.*;
 
-public class TestCase27 extends ChromeRunner {
+public class TestCase28 extends ChromeRunner {
     @Test
-    public void case27() {
+    public void case28() {
         MainPageSteps steps = new MainPageSteps();
         steps.clickSearchBtn()
                 .searchItem(searchItemData)
@@ -17,7 +17,7 @@ public class TestCase27 extends ChromeRunner {
                 .openTheCart()
                 .clickToContinue()
                 .clickBtn2()
-                .fillIdShort(steps.wrongId);
+                .fillLongId(longId);
 
     }
 }

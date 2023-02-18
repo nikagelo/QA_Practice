@@ -167,6 +167,11 @@ public class MainPageSteps extends MainPage {
         }
         return this;
     }
+    public MainPageSteps fillLongId (String num){
+        personalID.setValue(num);
+        personalID.getSize().equals(9);
+        return this;
+    }
 
 
 }
