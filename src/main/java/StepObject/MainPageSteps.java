@@ -118,6 +118,15 @@ public class MainPageSteps extends MainPage {
         iurPer.shouldBe(Condition.visible);
         return this;
     }
+    public MainPageSteps clickBtn2(){
+        submit2.click();
+        return this;
+    }
+    public MainPageSteps checkNameRed(){
+        name.getCssValue("red");
+        return this;
+
+    }
 
 
 }

@@ -28,7 +28,14 @@ public class MainPage {
     cartIsEmpty = $(byText("კალათა ცარიელია")),
     toContinue = $(byClassName("continue")),
     pisPer = $(byId("pis")),
-    iurPer = $(byId("iur"));
+    iurPer = $(byId("iur")),
+    submit2 = $(byId("btn2")),
+    name = $(byName("name")),
+    personalID = $(byName("personalID")),
+    adress = $(byName("adress")),
+    phone = $(byName("phone")),
+    date = $(byName("date"));
+
 
 
 
