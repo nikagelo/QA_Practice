@@ -26,7 +26,9 @@ public class MainPage {
     removeBtn = $(byClassName("fa-times")),
     clearCart = $(byText("კალათის გასუფთავება")),
     cartIsEmpty = $(byText("კალათა ცარიელია")),
-    toContinue = $(byClassName("continue"));
+    toContinue = $(byClassName("continue")),
+    pisPer = $(byId("pis")),
+    iurPer = $(byId("iur"));
 
 
 

@@ -109,6 +109,15 @@ public class MainPageSteps extends MainPage {
         clearCart.shouldNotBe(Condition.visible);
         return this;
     }
+    public MainPageSteps clickToContinue(){
+        toContinue.click();
+        return this;
+    }
+    public  MainPageSteps checkLaw(){
+        pisPer.shouldBe(Condition.visible);
+        iurPer.shouldBe(Condition.visible);
+        return this;
+    }
 
 
 }
