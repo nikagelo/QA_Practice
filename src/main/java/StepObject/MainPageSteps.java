@@ -172,6 +172,14 @@ public class MainPageSteps extends MainPage {
         personalID.getSize().equals(9);
         return this;
     }
+    public MainPageSteps fillId(String num){
+        personalID.setValue(num);
+        return this;
+    }
+    public  MainPageSteps notRedId(){
+        personalID.getCssValue("rgb(69, 69, 69)");
+        return this;
+    }
 
 
 }
