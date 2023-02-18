@@ -9,9 +9,9 @@ import org.testng.Assert;
 import static DataObject.MainPageData.*;
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class TestCase15 extends ChromeRunner {
+public class TestCase16 extends ChromeRunner {
     @Test
-    public void case15(){
+    public void case16(){
         MainPageSteps steps = new MainPageSteps();
         steps.clickSearchBtn()
                 .searchItem(searchItemData)
@@ -19,7 +19,7 @@ public class TestCase15 extends ChromeRunner {
                 .itemAddedTxt()
                 .openTheCart()
                 .clearCart()
-                .CartIsEmpty();
+                .noContinue();
 
 
     }

@@ -97,6 +97,14 @@ public class MainPageSteps extends MainPage {
         clearCart.scrollIntoView(false).click();
         return this;
     }
+    public MainPageSteps CartIsEmpty(){
+        cartIsEmpty.shouldBe(Condition.visible);
+        return this;
+    }
+    public MainPageSteps noContinue(){
+        toContinue.shouldNotBe(Condition.visible);
+        return this;
+    }
 
 
 }

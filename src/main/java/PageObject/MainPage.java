@@ -24,7 +24,9 @@ public class MainPage {
     plusBtn = $(byClassName("fa-plus")),
     minusBtn = $(byClassName("fa-minus")),
     removeBtn = $(byClassName("fa-times")),
-    clearCart = $(byText("კალათის გასუფთავება"));
+    clearCart = $(byText("კალათის გასუფთავება")),
+    cartIsEmpty = $(byText("კალათა ცარიელია")),
+    toContinue = $(byClassName("continue"));
 
 
 
