@@ -14,6 +14,7 @@ public class MainPageSteps extends MainPage {
     }
     public MainPageSteps searchInputVisible(){
         searchInput.shouldBe(Condition.visible);
+
         return this;
     }
     public MainPageSteps searchItem(String searchItemData){
@@ -21,7 +22,7 @@ public class MainPageSteps extends MainPage {
         return this;
     }
     public MainPageSteps checkSearchedItem(String searchItemData){
-        searchResult.shouldBe(Condition.visible);
+        searchResult.shouldBe(Condition.matchText(searchItemData));
         return this;
     }
     public MainPageSteps checkSearchedTest(String searchTestData){
@@ -83,9 +84,19 @@ public class MainPageSteps extends MainPage {
         }
         return this;
     }
-    public MainPageSteps numberToInt(){
+    public MainPageSteps removeItemFromCart(){
+        removeBtn.click();
+        return this;
 
-        return Double.parseDouble(String.valueOf(itemFullPrice.getOwnText()));
-//        return Integer.parseInt(String.valueOf(itemNum.getOwnText()));
     }
+    public  MainPageSteps emptyCart(){
+        itemTitle.shouldNotBe(Condition.visible);
+        return this;
+    }
+    public  MainPageSteps clearCart(){
+        clearCart.scrollIntoView(false).click();
+        return this;
+    }
+
+
 }

@@ -22,7 +22,9 @@ public class MainPage {
     itemPrice = $(byXpath("/html/body/div[5]/div/div[3]/div[6]/div[2]/span[1]")),
     itemFullPrice = $(byClassName("fullPriceFor")),
     plusBtn = $(byClassName("fa-plus")),
-    minusBtn = $(byClassName("fa-minus"));
+    minusBtn = $(byClassName("fa-minus")),
+    removeBtn = $(byClassName("fa-times")),
+    clearCart = $(byText("კალათის გასუფთავება"));
 
 
 
