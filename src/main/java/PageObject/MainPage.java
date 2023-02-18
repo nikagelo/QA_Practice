@@ -36,6 +36,7 @@ public class MainPage {
     phone = $(byName("phone")),
     date = $(byName("date")),
     email = $(byName("email"));
+    public String wrongId = "123456";
 
 
 

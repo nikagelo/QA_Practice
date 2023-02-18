@@ -1,11 +1,14 @@
 package StepObject;
 
 import PageObject.MainPage;
+import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import org.example.Main;
 import org.testng.Assert;
 
+import static com.codeborne.selenide.CollectionCondition.*;
 import static com.codeborne.selenide.Selenide.sleep;
+import com.codeborne.selenide.CollectionCondition.*;
 
 public class MainPageSteps extends MainPage {
     public  MainPageSteps clickSearchBtn(){
@@ -155,6 +158,13 @@ public class MainPageSteps extends MainPage {
     }
     public  MainPageSteps fillIdWrong(){
         personalID.setValue("test").shouldBe(Condition.empty);
+        return this;
+    }
+    public  MainPageSteps fillIdShort(String num){
+        int i = wrongId.length();
+        if (i != 9){
+            personalID.scrollIntoView(true).getCssValue("red");
+        }
         return this;
     }
 
