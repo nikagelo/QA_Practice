@@ -131,6 +131,10 @@ public class MainPageSteps extends MainPage {
         personalID.scrollIntoView(true).getCssValue("red");
         return this;
     }
+    public  MainPageSteps checkAdressRed(){
+        adress.scrollIntoView(true).getCssValue("red");
+        return this;
+    }
 
 
 }

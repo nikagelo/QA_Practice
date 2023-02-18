@@ -32,7 +32,7 @@ public class MainPage {
     submit2 = $(byId("btn2")),
     name = $(byName("name")),
     personalID = $(byName("personalId")),
-    adress = $(byName("adress")),
+    adress = $(byName("address")),
     phone = $(byName("phone")),
     date = $(byName("date"));
 
@@ -42,3 +42,4 @@ public class MainPage {
 
 
 }
+//test case 22, checks if address input gets red when submitting empty form
