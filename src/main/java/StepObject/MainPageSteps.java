@@ -153,6 +153,10 @@ public class MainPageSteps extends MainPage {
         name.getCssValue("rgb(69, 69, 69)");
         return this;
     }
+    public  MainPageSteps fillIdWrong(){
+        personalID.setValue("test").shouldBe(Condition.empty);
+        return this;
+    }
 
 
 }
