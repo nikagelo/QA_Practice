@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static DataObject.MainPageData.*;
 
-public class TestCase22 extends ChromeRunner {
+public class TestCase23 extends ChromeRunner {
     @Test
     public void case22() {
         MainPageSteps steps = new MainPageSteps();
@@ -17,6 +17,6 @@ public class TestCase22 extends ChromeRunner {
                 .openTheCart()
                 .clickToContinue()
                 .clickBtn2()
-                .checkPhoneRed();
+                .checkDateRed();
     }
 }

@@ -34,8 +34,8 @@ public class MainPage {
     personalID = $(byName("personalId")),
     adress = $(byName("address")),
     phone = $(byName("phone")),
-    date = $(byName("date"));
-
+    date = $(byName("date")),
+    email = $(byName("email"));
 
 
 

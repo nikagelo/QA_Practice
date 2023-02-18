@@ -135,8 +135,16 @@ public class MainPageSteps extends MainPage {
         adress.scrollIntoView(true).getCssValue("red");
         return this;
     }
+    public  MainPageSteps checkPhoneRed(){
+        phone.scrollIntoView(true).getCssValue("red");
+        return this;
+    }
     public  MainPageSteps checkDateRed(){
         date.scrollIntoView(true).getCssValue("red");
+        return this;
+    }
+    public  MainPageSteps checkEmailRed(){
+        email.scrollIntoView(true).getCssValue("red");
         return this;
     }
 
