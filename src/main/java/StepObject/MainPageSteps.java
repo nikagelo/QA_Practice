@@ -213,6 +213,33 @@ public class MainPageSteps extends MainPage {
         phone.getCssValue("rgb(69, 69, 69)");
         return this;
     }
+    public MainPageSteps fillDate(String str){
+        date.setValue(str);
+        return this;
+    }
+    public  MainPageSteps checkDateShort(String str){
+        if (str.length()<5){
+            date.getCssValue("red");
+        }
+        return this;
+
+    }
+    public  MainPageSteps checkDate(String str){
+        if (str.length()>5){
+            date.getCssValue("rgb(69, 69, 69)");
+        }
+        return this;
+
+    }
+    public  MainPageSteps checkMail(String str){
+        email.setValue(str);
+        return this;
+
+    }
+    public  MainPageSteps notRedMail(){
+        personalID.getCssValue("rgb(69, 69, 69)");
+        return this;
+    }
 
 
 

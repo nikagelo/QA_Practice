@@ -9,6 +9,12 @@ public interface MainPageData {
     phoneRight = "123456789",
     phoneShort="123",
     phoneLong= "123456789101112",
+    wrongDate = "51ა",
+    correctDate = "5 იანვარი",
+    wrongMail = "test.gmail.com",
+    wrongMail2= "test@gmail",
+    wrongMail3="test.gmail@",
+    correctMail = "test@gmail.com",
     SearchTestData = "satesto";
     Integer num = 3;
 }
