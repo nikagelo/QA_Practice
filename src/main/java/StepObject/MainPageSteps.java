@@ -189,6 +189,32 @@ public class MainPageSteps extends MainPage {
         return this;
 
     }
+    public  MainPageSteps fillPhone(String str){
+        phone.setValue(str).shouldBe(Condition.empty);
+        return this;
+
+    }
+    public  MainPageSteps fillPhoneShort(String str){
+        if (str.length()!=9){
+            phone.getCssValue("red");
+            sleep(5000);
+        }
+        return this;
+
+    }
+    public  MainPageSteps fillPhoneLong(String str){
+        if (str.length()>9){
+            phone.getSize().equals(9);
+        }
+        return this;
+
+    }
+    public  MainPageSteps checkPhoneNoTRed(){
+        phone.getCssValue("rgb(69, 69, 69)");
+        return this;
+    }
+
+
 
 
 }

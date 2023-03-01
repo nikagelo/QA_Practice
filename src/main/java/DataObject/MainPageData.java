@@ -6,6 +6,8 @@ public interface MainPageData {
     correctId = "123456789",
     address = "test",
     longId = "1234567891011",
+    phoneShort="123",
+    phoneLong= "123456789101112",
     SearchTestData = "satesto";
     Integer num = 3;
 }
