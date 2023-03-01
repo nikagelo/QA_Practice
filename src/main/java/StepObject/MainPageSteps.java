@@ -209,7 +209,7 @@ public class MainPageSteps extends MainPage {
         return this;
 
     }
-    public  MainPageSteps checkPhoneNoTRed(){
+    public  MainPageSteps checkPhoneNotRed(){
         phone.getCssValue("rgb(69, 69, 69)");
         return this;
     }
