@@ -4,6 +4,7 @@
 <test name="CartTestCases" parallel="tests" >
 <classes>
 <class name="OfficeMart.CartCases"/>
+<class name="OfficeMart.FormCases"/>
 
 </classes>
 </test>
